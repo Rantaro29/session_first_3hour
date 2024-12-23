@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.RegisterFragment">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:background="@drawable/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="66dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView7"
+        style="@style/Raleway32Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="121dp"
+        android:text="@string/register"
+        android:textColor="@color/customBlack"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView8"
+        style="@style/Poppins16regular"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/description_Register"
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toEndOf="@+id/appCompatTextView7"
+        app:layout_constraintStart_toStartOf="@+id/appCompatTextView7"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView7" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView8"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20sp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@id/appCompatTextView"
+            tools:layout_editor_absoluteX="20dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/appCompatTextView6"
+                style="@style/Poppins16regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ваше имя"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/nameEditText"
+                style="@style/editTextLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/edit_text_shape"
+                android:hint="@string/xxxxxxxx"
+                android:inputType="textPersonName"
+                app:layout_constraintTop_toBottomOf="@+id/appCompatTextView6" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20sp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@id/appCompatTextView"
+            tools:layout_editor_absoluteX="20dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/appCompatTextView4"
+                style="@style/Poppins16regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/emailEditText"
+                style="@style/editTextLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/edit_text_shape"
+                android:hint="@string/xyz_gmail_com"
+                android:inputType="textEmailAddress"
+                app:layout_constraintTop_toBottomOf="@+id/appCompatTextView4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/secondInputBlock"
+            app:layout_constraintTop_toBottomOf="@id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20sp"
+            android:layout_marginTop="30dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/appCompatTextView5"
+                style="@style/Poppins16regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/passwordEditText"
+                style="@style/editTextLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/edit_text_shape"
+                android:hint="@string/dots"
+                android:inputType="textPassword"
+                app:layout_constraintTop_toBottomOf="@+id/appCompatTextView5" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:button="@drawable/eye"
+                android:layout_marginRight="14dp"
+                app:layout_constraintBottom_toBottomOf="@id/passwordEditText"
+                app:layout_constraintEnd_toEndOf="@+id/passwordEditText"
+                app:layout_constraintTop_toTopOf="@+id/passwordEditText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.onboarding.ThirdOnboardingFragment"
+    android:background="@drawable/background_gradient">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:src="@drawable/group_1000000798"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="453dp"
+            android:id="@+id/appCompatTextView2"
+            style="@style/Raleway34Bold"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:text="У вас есть сила, чтобы"
+            android:textColor="@color/customWhite" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/description"
+            style="@style/Poppins16regular"
+            android:layout_width="322dp"
+            android:layout_height="wrap_content"
+            android:text="@string/descriptionOnboarding3"
+            android:textColor="@color/D8D8D8"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="@+id/appCompatTextView2"
+            app:layout_constraintStart_toStartOf="@+id/appCompatTextView2"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatTextView2" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/indicator"
+            android:src="@drawable/group_1000000729_1"
+            android:layout_marginTop="40dp"
+            app:layout_constraintLeft_toLeftOf="@id/description"
+            app:layout_constraintRight_toRightOf="@id/description"
+            app:layout_constraintTop_toBottomOf="@id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button"
+            style="@style/buttonWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/button_white"
+            android:text="@string/next"
+            app:layout_constraintTop_toBottomOf="@id/indicator"
+            android:layout_marginTop="84dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

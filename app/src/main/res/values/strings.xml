@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Supabase</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">Добро пожаловать</string>
+    <string name="start">Начать</string>
+    <string name="startAdventure">Начнем путешествие</string>
+    <string name="descriptionOnboarding2">Умная, великолепная и модная коллекция Изучите сейчас</string>
+    <string name="next">Далее</string>
+    <string name="descriptionOnboarding3">В вашей комнате много красивых и привлекательных растений</string>
+    <string name="hello">Привет!</string>
+    <string name="descriptionHomefragment">Заполните Свои данные или продолжите через социальные медиа</string>
+    <string name="email">Email</string>
+    <string name="xyz_gmail_com">xyz@gmail.com</string>
+    <string name="password">Пароль</string>
+    <string name="dots">••••••••</string>
+    <string name="restore">Востановить</string>
+    <string name="aingIn">Войти</string>
+    <string name="homeFogotPassword1">Вы впервые?</string>
+    <string name="homeForgotPassword1">Создать пользователя</string>
+    <string name="register">Регистрация</string>
+    <string name="description_Register">Заполните Свои данные или продолжите через социальные медиа</string>
+    <string name="xxxxxxxx">xxxxxxxx</string>
+</resources>
